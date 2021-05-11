@@ -11,6 +11,7 @@ body, html {
   height: 100%;
 
   background: #ECF0F3;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -43,5 +44,53 @@ button {
     height: 56px;
     border: none;
   }
+}
+
+.card {
+  box-shadow: -18px -18px 30px 0px rgba(255, 255, 255, 1),
+    18px 18px 30px 0px rgba(209, 217, 230, 1);
+
+  padding: 22px;
+  border-radius: 16px;
+  margin: 16px;
+
+  &.c200 {
+    height: 200px;
+    width: 460px;
+  }
+
+  &.c500 {
+    height: 480px;
+    width: 460px;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &.v {
+    flex-direction: column;
+  }
+
+  &.h {
+    flex-direction: row;
+  }
+
+  &.jcenter {
+    justify-content: center;
+  }
+
+  &.icenter {
+    align-items: center;
+  }
+
+  .center {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.mt-2 {
+  margin-top: 2rem;
 }
 </style>
