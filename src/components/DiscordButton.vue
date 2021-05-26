@@ -39,7 +39,6 @@ export default Vue.extend({
     const token = localStorage.getItem('jwt');
     if (token) {
       this.tokenData = jwt.decode(token);
-      console.log(this.tokenData);
       this.authorized = true;
     }
   },
@@ -70,6 +69,7 @@ export default Vue.extend({
     text-overflow: ellipsis;
     span {
       color: white;
+      font-size: 18px;
 
       &.name {
         font-size: 14px;

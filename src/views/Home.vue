@@ -9,10 +9,13 @@
           span Authorize Discord then Canvas
           DiscordButton
           CanvasButton
-        .card.c200
-          h3 Availiable Servers
-      .card.c500
+        .card.c200.flex.v
+          h3 Available Servers
+          p Currently none
+      .card.c500.flex.v
         h3 About
+        p Connect your Discord account with canvas and get reminders,
+          |  announcements and more in your Discord server!
 </template>
 
 <script lang="ts">

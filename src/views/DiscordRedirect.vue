@@ -20,6 +20,7 @@ export default Vue.extend({
       url: 'http://localhost:3000/oauth/callback/discord',
       params: {
         code: this.$route.query.code,
+        instanceId: localStorage.getItem('instanceId'),
       },
     })
       .then((res) => {

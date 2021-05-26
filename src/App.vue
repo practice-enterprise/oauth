@@ -22,6 +22,14 @@ h1 {
   margin-top: 0;
 }
 
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 12px 0px;
+  margin-top: 0;
+}
+
 h5 {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
