@@ -72,7 +72,10 @@ export default Vue.extend({
     },
   },
   async mounted() {
-    const instanceId = this.$route.query.instanceId || 'DLV3kVezrRO88588uA9H';
+    const instanceId = this.$route.query.instanceId || await axios.request<string>({
+      url: 'http://localhost:3000/config/defaultInstance',
+      method: 'get',
+    }).then((i) => i.data);
     localStorage.setItem('instanceId', instanceId as string);
     const res = await axios.request({
       url: `http://localhost:3000/oauth/instances/${instanceId}`,
