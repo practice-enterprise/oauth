@@ -10,12 +10,20 @@
           DiscordButton
           CanvasButton
         .card.c200.flex.v
-          h3 Available Servers
-          p Currently none
+          h3 What's this?
+          p Connect your Discord and Canvas account to access
+            |  Canvas features, reminders and more in your Discord server!
       .card.c500.flex.v
-        h3 About
-        p Connect your Discord account with canvas and get reminders,
-          |  announcements and more in your Discord server!
+        h3 How do I sign in?
+        p First you sign in with Discord, afterwards with Canvas.
+        h4 Discord
+        p Simply click authorize next to Discord and log in.
+        h4 Canvas
+        p You will first need to generate an access token,
+          |  enter this and click authorize.
+          |  Make sure you set it to not expire for your convenience
+          |  (you can always revoke this later).
+        <a href="https://community.canvaslms.com/t5/Admin-Guide/How-do-I-manage-API-access-tokens-as-an-admin/ta-p/8/">How to create an access token for Canvas</a>
 </template>
 
 <script lang="ts">

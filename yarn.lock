@@ -880,6 +880,16 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@iconify-icons/akar-icons@^1.1.23":
+  version "1.1.23"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/akar-icons/-/akar-icons-1.1.23.tgz#6b5ecccfa2a6a2888f35ea4a8fc3b5f0daaaf827"
+  integrity sha512-BnWwyvWtblQNYz+b7UdYAwnqqJoWKEweCWjNg+UB/fRYZZUs/3ONpkFNa+CtB6kRhiVBsMOjwscD8arlY/tKTw==
+
+"@iconify-icons/ant-design@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/ant-design/-/ant-design-1.1.0.tgz#7fbaa994dcac24195512164595118819e5749bca"
+  integrity sha512-RU3MljXpV3Y777woJb8t1ymJ+4k7QqGDOYsSJxkDHNRkJruPl0CtC/QpXgPYA+beAmhTTfz2HPZSJXYnZUlAmg==
+
 "@iconify/icons-carbon@^1.1.3":
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@iconify/icons-carbon/-/icons-carbon-1.1.3.tgz#913093979781116ae06fffbc702e07cab455fd98"
