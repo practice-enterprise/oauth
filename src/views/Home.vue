@@ -1,8 +1,9 @@
 <template lang="pug">
   .wrapper
-    .title
-      h1 Thomas More: De Nayer
-      navbar
+    .flex.h
+      .title
+        h1 Thomas More: De Nayer
+        navbar
     .flex.h.mt-2
       .flex.v
         .card.c200.flex.v.center
@@ -48,7 +49,7 @@ export default Vue.extend({
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  // height: 100%;
 }
 
 .card span {

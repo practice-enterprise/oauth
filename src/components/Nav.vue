@@ -55,6 +55,8 @@ export default Vue.extend({
   font-size: 18px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .item {
@@ -62,6 +64,7 @@ export default Vue.extend({
   flex-direction: row;
   align-items: center;
   margin-right: 42px;
+  margin-bottom: 10px;
 
   span {
     margin-left: 8px;
