@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Raleway:wght@400;500&family=Roboto:wght@400;500&display=swap');
 
 body, html {
-  margin: 0 4vw;
+  margin: 0;
   padding: 0;
   height: 100%;
 
@@ -20,13 +20,22 @@ h1 {
   font-size: 48px;
   margin: 12px 0px;
   margin-top: 0;
+  text-align: center;
 }
 
 h3 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 20px;
-  margin: 12px 0px;
+  margin: 8px 0px;
+  margin-top: 0;
+}
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 6px 0px;
   margin-top: 0;
 }
 
@@ -54,34 +63,22 @@ button {
   }
 }
 
-.card {
-  box-shadow: -18px -18px 30px 0px rgba(255, 255, 255, 1),
-    18px 18px 30px 0px rgba(209, 217, 230, 1);
-
-  padding: 22px;
-  border-radius: 16px;
-  margin: 16px;
-
-  &.c200 {
-    height: 200px;
-    width: 460px;
-  }
-
-  &.c500 {
-    height: 480px;
-    width: 460px;
-  }
+.title {
+  margin-top: 3em;
+  margin-bottom: 1em;
+  width: 100%;
 }
 
 .flex {
   display: flex;
-
+  flex-wrap: wrap;
   &.v {
     flex-direction: column;
   }
 
   &.h {
     flex-direction: row;
+    justify-content: center;
   }
 
   &.jcenter {
@@ -97,7 +94,26 @@ button {
     justify-content: center;
   }
 }
+.card {
+  box-shadow: -18px -18px 30px 0px rgba(255, 255, 255, 1),
+    18px 18px 30px 0px rgba(209, 217, 230, 1);
 
+  padding: 22px;
+  border-radius: 16px;
+  margin: 16px;
+
+  &.c200 {
+    height: 200px;
+    max-width: 460px;
+  }
+
+  &.c500 {
+    height: 480px;
+    max-width: 460px;
+  }
+
+  flex-wrap: nowrap;
+}
 .mt-2 {
   margin-top: 2rem;
 }

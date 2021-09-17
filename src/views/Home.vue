@@ -1,8 +1,9 @@
 <template lang="pug">
   .wrapper
-    .title
-      h1 Thomas More: De Nayer
-      navbar
+    .flex.h
+      .title
+        h1 Thomas More: De Nayer
+        navbar
     .flex.h.mt-2
       .flex.v
         .card.c200.flex.v.center
@@ -10,12 +11,22 @@
           DiscordButton
           CanvasButton
         .card.c200.flex.v
-          h3 Available Servers
-          p Currently none
+          h3 What's this?
+          p Connect your Discord and Canvas account to access
+            |  Canvas features, reminders and more in your Discord server!
       .card.c500.flex.v
-        h3 About
-        p Connect your Discord account with canvas and get reminders,
-          |  announcements and more in your Discord server!
+        h3 How do I sign in?
+        p First you sign in with Discord, afterwards with Canvas.
+        h4 Discord
+        p Simply click authorize next to Discord and log in.
+        h4 Canvas
+        p You will first need to generate an access token,
+          |  enter this and click authorize.
+          |  Make sure you set it to not expire for your convenience
+          |  (you can always revoke this later).
+          |  <br><a href="https://community.canvaslms.com/t5/Admin-Guide/How-do-I-manage-API-access-tokens-as-an-admin/ta-p/8/">How to create an access token for Canvas</a>
+        h3 How do I log out?
+        p Use /logout in any supported guild.
 </template>
 
 <script lang="ts">
@@ -40,7 +51,7 @@ export default Vue.extend({
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  // height: 100%;
 }
 
 .card span {
