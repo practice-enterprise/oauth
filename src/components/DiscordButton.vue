@@ -13,6 +13,10 @@ import IconifyIcon from '@iconify/vue';
 import discordIcon from '@iconify/icons-simple-icons/discord';
 import jwt from 'jsonwebtoken';
 
+if (process.env.VUE_APP_DREDIRECTURI == null) {
+  throw Error('redirect uri not set');
+}
+
 export default Vue.extend({
   name: 'DiscordButton',
   components: {
@@ -27,7 +31,7 @@ export default Vue.extend({
   }),
   methods: {
     redirect() {
-      window.location.href = 'https://discord.com/api/oauth2/authorize?client_id=781214746891780137&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Foauth2%2Fdiscord&response_type=code&scope=identify%20guilds';
+      window.location.href = `https://discord.com/api/oauth2/authorize?client_id=781214746891780137&redirect_uri=${String(encodeURIComponent(process.env.VUE_APP_DREDIRECTURI))}&response_type=code&scope=identify%20guilds`;
     },
   },
   computed: {
