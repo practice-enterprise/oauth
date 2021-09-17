@@ -63,7 +63,7 @@ export default Vue.extend({
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 42px;
+  margin: 5px;
   margin-bottom: 10px;
 
   span {
