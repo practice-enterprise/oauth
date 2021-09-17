@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Raleway:wght@400;500&family=Roboto:wght@400;500&display=swap');
 
 body, html {
-  margin: 0 4vw;
+  margin: 0;
   padding: 0;
   height: 100%;
 
