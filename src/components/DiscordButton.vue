@@ -31,7 +31,11 @@ export default Vue.extend({
   }),
   methods: {
     redirect() {
-      window.location.href = `https://discord.com/api/oauth2/authorize?client_id=781214746891780137&redirect_uri=${String(encodeURIComponent(process.env.VUE_APP_DREDIRECTURI))}&response_type=code&scope=identify%20guilds`;
+      if (process.env.VUE_APP_DREDIRECTURI) {
+        window.location.href = `https://discord.com/api/oauth2/authorize?client_id=781214746891780137&redirect_uri=${String(encodeURIComponent(process.env.VUE_APP_DREDIRECTURI))}&response_type=code&scope=identify%20guilds`;
+      } else {
+        throw new Error('VUE_APP_DREDIRECTURI undefined (env file)');
+      }
     },
   },
   computed: {
