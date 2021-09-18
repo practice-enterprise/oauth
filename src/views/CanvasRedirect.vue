@@ -17,7 +17,7 @@ export default Vue.extend({
   mounted() {
     Axios.request({
       method: 'post',
-      url: 'http://localhost:3000/oauth/callback/canvas',
+      url: process.env.VUE_APP_CCALLBACK,
       params: {
         code: this.$route.query.code,
       },
