@@ -9,6 +9,7 @@ Create `.env` file in root with content:
 
 ```txt
 VUE_APP_DREDIRECTURI=<redirect uri>
+VUE_APP_DCALLBACK=<callback>
 ```
 
 ### Compiles and hot-reloads for development
