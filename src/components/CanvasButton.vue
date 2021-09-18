@@ -40,7 +40,7 @@ export default Vue.extend({
             return;
           }
           axios.request({
-            url: 'http://localhost:3000/oauth/callback/canvas/manual',
+            url: `${process.env.VUE_APP_API}/oauth/callback/canvas/manual`,
             method: 'POST',
             data: {
               token: this.token,
@@ -73,12 +73,12 @@ export default Vue.extend({
   },
   async mounted() {
     const instanceId = this.$route.query.instanceId || await axios.request<string>({
-      url: 'http://localhost:3000/config/defaultInstance',
+      url: `${process.env.VUE_APP_API}/config/defaultInstance`,
       method: 'get',
     }).then((i) => i.data);
     localStorage.setItem('instanceId', instanceId as string);
     const res = await axios.request({
-      url: `http://localhost:3000/oauth/instances/${instanceId}`,
+      url: `${process.env.VUE_APP_API}/oauth/instances/${instanceId}`,
       method: 'get',
     });
     this.instance = res.data;

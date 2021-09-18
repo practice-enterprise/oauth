@@ -9,8 +9,10 @@ Create `.env` file in root with content:
 
 ```txt
 VUE_APP_DREDIRECTURI=<redirect uri>
-VUE_APP_DCALLBACK=<callback>
+VUE_APP_API=<API URL>
 ```
+
+note: no trailing /'s.
 
 ### Compiles and hot-reloads for development
 ```

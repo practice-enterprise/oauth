@@ -17,7 +17,7 @@ export default Vue.extend({
   mounted() {
     Axios.request({
       method: 'post',
-      url: process.env.VUE_APP_DCALLBACK,
+      url: `${process.env.VUE_APP_API}/oauth/callback/discord`,
       params: {
         code: this.$route.query.code,
         instanceId: localStorage.getItem('instanceId'),
