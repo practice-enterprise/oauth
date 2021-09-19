@@ -24,7 +24,7 @@
           |  enter this and click authorize.
           |  Make sure you set it to not expire for your convenience
           |  (you can always revoke this later).
-          |  <br><a href="https://community.canvaslms.com/t5/Admin-Guide/How-do-I-manage-API-access-tokens-as-an-admin/ta-p/8/">How to create an access token for Canvas</a>
+          |  <br><a href="https://community.canvaslms.com/t5/Student-Guide/How-do-I-manage-API-access-tokens-as-a-student/ta-p/273">How to create an access token for Canvas</a>
         h3 How do I log out?
         p Use /logout in any supported guild.
 </template>
