@@ -36,7 +36,7 @@ export default Vue.extend({
           window.location.href = `${this.instance.endpoint}/login/oauth2/auth?${this.instance.clientId}$response_type=code&redirect_uri=${this.instance.redirectUri}`;
         } else {
           if (!this.token) {
-            alert('fill in the token field');
+            alert('Enter your Canvas access token in the token field.');
             return;
           }
           axios.request({
@@ -55,11 +55,11 @@ export default Vue.extend({
             this.$router.go(0);
           }).catch((err) => {
             console.error(err);
-            alert('invalid token');
+            alert('Something went wrong with your token. Make sure to authenticate Discord first and check if you token is valid.');
           });
         }
       } else {
-        alert('invalid canvas instance');
+        alert('Invalid Canvas instance. Report to admin.');
       }
     },
   },
